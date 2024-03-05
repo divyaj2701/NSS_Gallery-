@@ -1,0 +1,132 @@
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(196, 196, 255);
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .memories {
+            width: 100%;
+            height: 40px;
+            border-bottom-left-radius: 2.5ch;
+            border-bottom-right-radius: 2.5ch;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(235, 235, 235);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            display: grid;
+            grid-template-areas: "event1 side_panel" "event2 side_panel" "event3 side_panel";
+            grid-template-columns: 1fr 1fr;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+            gap: 2vw;
+            margin-left: 1vw; /* Adjust margin between container and side panel */
+        }
+
+        .box {
+            width: 25vw;
+            height: 25vw;
+            background-color: rgb(219, 219, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-right: 2vw; /* Adjust margin between event and side panel */
+        }
+
+        .imgbox {
+            width: 35vw;
+            height: 25vw;
+            background-color: rgb(69, 112, 112);
+            border: 1px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-left: 2vw;
+            margin-right: 2vw;
+        }
+
+        .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .event {
+            display: flex;
+            column-gap: 5vw;
+            margin-right: 10vw; /* Adjust margin to move event boxes a little to the right */
+            margin-top: 2vw;
+        }
+
+        .event1 {
+            grid-area: event1;
+        }
+
+        .event2 {
+            grid-area: event2;
+        }
+
+        .event3 {
+            grid-area: event3;
+        }
+
+        .sidepanel {
+            height: auto;
+            width: 15vw;
+            background-color: rgb(219, 219, 255);
+            grid-area: side_panel;
+            margin-top: 2vw;
+        }
+
+        .sidepanel li {
+            list-style-position: inside;
+            font-size: large;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: rgb(104, 104, 226);
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            background-color: transparent;
+            width: 2rem;
+        }
